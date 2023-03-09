@@ -9,7 +9,6 @@
     background-size: cover;
     background-position: 90%;
     &__wrapper{
-        
         h2{
             font-size: 4rem;
             color: $clr-primary;
@@ -29,7 +28,6 @@
                 background-color: rgba(white, .2);
             }
         }
-
     }
     @include mediaQuery($break-lg){
         &{
@@ -99,7 +97,6 @@
     max-width: 120rem;
     margin: 0 auto;
     &__wrapper{
-        
         background-color: #1e3932;
        text-align: center;
        img{
@@ -212,7 +209,6 @@
         .reusables__wrapper#deliver{
             margin-top: unset;
            }
-    
    }
 }
 .sweet{
@@ -244,7 +240,6 @@
        p{
            padding-bottom: 2rem;
            padding: 2rem;
-
        }
        a{
            color: $clr-dark;
