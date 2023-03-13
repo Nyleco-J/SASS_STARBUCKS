@@ -1,0 +1,57 @@
+.footer{
+    padding: 2rem 0;
+    background-color: $clr-light;
+    margin-left: 2rem;
+    &__wrapper{
+        .social{
+            padding-bottom: 2rem;
+            img{
+                margin-right: 1rem;
+                width: 3rem;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+                &:hover{
+                    transform: translateY(-1rem);
+                }
+            }
+        }
+    }
+    &__text{
+        display: block;
+        .content{
+            ul{
+                display: block;
+                li{
+                    margin-bottom: 2rem;
+                    a{
+                        font-size: 1.7rem;
+                        font-weight: 500;
+
+                    }
+                    &:hover a{
+                        color: $clr-primary;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    @include mediaQuery($break-lg){
+        &__text{
+            display: flex;
+            justify-content: space-between;
+            .content{
+                ul{
+                    display: flex;
+                    li{
+                        margin-right: 2rem;
+                        margin-bottom: unset;
+                    }
+                }
+            }
+                
+        }
+    }
+}

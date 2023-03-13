@@ -14,21 +14,22 @@
         }
     }
     
-    &-outline{
+    &-outlinee{
         background-color: transparent;
-        color: $clr-primary;
-        border-color: $clr-primary;
+        color: $clr-dark;
+        border-color: $clr-dark;
+        font-weight: 800;
         &:hover{
-            background-color:$clr-primary;
-            color: $clr-light;
+            background-color:rgb(236, 232, 232);
+            color: $clr-dark;
         }
     }
     &-dark{
-        background-color: $clr-dark;
+        background-color: black;
         color: $clr-light;
-        border-color: $clr-dark;
+        border-color: rgb(0, 0, 0);
         &:hover{
-            background-color: darken($clr-dark, 10);
+            background-color: darken(gray, 8);
         }
     }
 }
