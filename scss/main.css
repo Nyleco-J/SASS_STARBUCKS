@@ -625,6 +625,57 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: unset;
 }
 
+.coffee {
+  max-width: 120rem;
+}
+.coffee__free {
+  background-color: yellow;
+  padding-top: 5rem;
+  text-align: center;
+}
+.coffee__free h3 {
+  text-align: center;
+}
+.coffee__free ul {
+  display: flex;
+  text-align: center;
+  margin-top: 2rem;
+}
+.coffee__free ul li {
+  padding: 2rem;
+  border-bottom: 3px solid transparent;
+}
+.coffee__free ul li.active {
+  border-bottom: 3px solid blue;
+}
+.coffee__free ul li a {
+  font-size: 2rem;
+  color: #2d2d2d;
+}
+.coffee__sec {
+  background-color: aqua;
+  padding: 5rem 0;
+}
+.coffee__sec__content {
+  display: none;
+  text-align: center;
+  margin: 0 2rem;
+}
+.coffee__sec__content.active {
+  display: block;
+}
+.coffee__sec__content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.coffee__sec__content__text h2 {
+  margin: 2rem 0;
+}
+
 .links {
   border-top: rgb(187, 187, 187) 1px solid;
   padding: 1rem 0;

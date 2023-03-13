@@ -14,3 +14,26 @@ toggleMenu.addEventListener("click", () => {
   headerbg.classList.toggle("open");
 });
 
+const coffeefree =document.querySelectorAll(".star__nav__link");
+const coffeeContent =document.querySelectorAll(".coffee__sec__content");
+coffeefree.forEach((star) => {
+  star.addEventListener("click", () => {
+    removeActiveStar();
+    star.classList.add("active");
+    const activeContent= document.querySelector(`#${star.id}-content`);
+    removeActiveContent();
+    activeContent.classList.add("active");
+  })
+})
+
+function removeActiveStar(){
+  coffeefree.forEach((star) => {
+    star.classList.remove("active");
+  })
+}
+
+function removeActiveContent(){
+  coffeeContent.forEach((star) => {
+    star.classList.remove("active");
+  })
+}
