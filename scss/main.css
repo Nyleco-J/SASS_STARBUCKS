@@ -1017,7 +1017,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 .card__title__text__content h3 {
   font-size: 2rem;
 }
+.card .firstline {
+  padding-bottom: 5rem;
+}
 .card .secline {
+  border-top: 1px solid gray;
   padding-top: 5rem;
 }
 .card .dollar {
