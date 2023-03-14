@@ -419,7 +419,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .btn {
-  background-color: #006241;
+  background-color: #fff;
   padding: 0.8rem 1.8rem;
   border-radius: 3rem;
   border: 1px solid;
@@ -451,6 +451,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 .btn-dark:hover {
   background-color: #6c6c6c;
+}
+.btn-num {
+  border-radius: 50%;
+  color: rgb(9, 128, 5);
+  border-color: rgb(9, 128, 5);
 }
 
 .header {
@@ -625,11 +630,8 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   display: unset;
 }
 
-.coffee {
-  max-width: 120rem;
-}
 .coffee__free {
-  background-color: yellow;
+  background-color: rgb(218, 214, 214);
   padding-top: 5rem;
   text-align: center;
 }
@@ -654,12 +656,19 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 .coffee__sec {
   background-color: aqua;
-  padding: 5rem 0;
+  padding: 2rem 0;
+  min-height: 42vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .coffee__sec__content {
-  display: none;
+  display: block;
+  position: absolute;
+  opacity: 0;
   text-align: center;
   margin: 0 2rem;
+  transition: 0.5s ease;
 }
 .coffee__sec__content.active {
   display: block;
@@ -674,6 +683,371 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 .coffee__sec__content__text h2 {
   margin: 2rem 0;
+}
+.coffee__sec__content.active {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 970px) {
+  .coffee .coffee__free {
+    align-items: center;
+    justify-content: center;
+  }
+  .coffee .coffee__free ul {
+    margin-top: 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .coffee .coffee__sec {
+    min-height: 25vh;
+  }
+  .coffee .coffee__sec__content {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .coffee .coffee__sec__content img {
+    width: 35rem;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .coffee .coffee__sec__content__text {
+    max-width: 30rem;
+    text-align: justify;
+  }
+}
+
+.bannerstar {
+  background-color: #1E3932;
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
+.bannerstar__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerstar__text h2 {
+  margin-left: 2rem;
+  color: #fff;
+}
+.bannerstar__text a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 50px;
+  color: #fff;
+  border-style: solid;
+  padding: 0.5rem 15px;
+  border-width: 1px;
+  cursor: pointer;
+}
+@media screen and (min-width: 970px) {
+  .bannerstar {
+    padding-top: 13rem;
+  }
+  .bannerstar__text h2 {
+    margin-left: 10rem;
+  }
+  .bannerstar__text a {
+    display: none;
+  }
+}
+
+.picture {
+  background-image: url("/image/rewards/bg.jpg");
+  background-size: contain;
+  background-color: #D0EAE4;
+  height: 60vh;
+  background-position: 90%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+.picture .bannersb__wrapper {
+  text-align: center;
+  padding: 2rem 0;
+}
+.picture .bannersb__wrapper h2 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  line-height: 1.2;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+.picture .bannersb__wrapper p {
+  margin: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+.picture .bannersb__wrapper p.joinonline {
+  text-decoration: underline;
+}
+.picture .bannersb__wrapper p.joinonline:hover {
+  text-decoration: none;
+}
+.picture .bannersb__wrapper a {
+  background-color: #00754A;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 50px;
+  color: #fff;
+  border-style: solid;
+  padding: 0.5rem 15px;
+  border-width: 1px;
+  cursor: pointer;
+}
+@media screen and (min-width: 970px) {
+  .picture {
+    background-image: url("/image/rewards/xl-hero-desktop_2021.png");
+  }
+  .picture .bannersb__wrapper {
+    text-align: unset;
+    padding: 12.5rem 0;
+  }
+  .picture .bannersb__wrapper h2 {
+    font-size: 4rem;
+    max-width: 30rem;
+    margin: unset;
+  }
+  .picture .bannersb__wrapper p {
+    margin: unset;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .picture .bannersb__wrapper p.joinonline {
+    text-decoration: none;
+  }
+  .picture .bannersb__wrapper p.joinonline span {
+    text-decoration: underline;
+  }
+  .picture .bannersb__wrapper p.joinonline span:hover {
+    text-decoration: none;
+  }
+}
+
+.getting {
+  padding: 8rem 0;
+}
+.getting__title {
+  text-align: center;
+}
+.getting__title h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.getting__title p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+.getting__title__text {
+  margin-bottom: 3rem;
+  display: flex;
+  margin-left: 2rem;
+}
+.getting__title__text__content {
+  display: flex;
+  align-items: start;
+}
+.getting__title__text__content .down {
+  margin-left: 2rem;
+}
+.getting__title__text__content h2 {
+  padding: 1rem 2rem;
+  border: 1px solid green;
+  border-radius: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.getting__title__text__content h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.getting__title__text__content p {
+  max-width: 38rem;
+}
+.getting__title__text__content p span {
+  text-decoration: underline;
+  color: #00754A;
+  cursor: pointer;
+}
+.getting__title__text__content p span:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 970px) {
+  .getting__title h2 {
+    font-size: 3.5rem;
+  }
+  .getting__title p {
+    font-size: 1.8rem;
+  }
+  .getting .app {
+    display: flex;
+  }
+  .getting .app h2 {
+    margin-left: 17rem;
+  }
+  .getting__title__text__content {
+    display: block;
+  }
+  .getting__title__text__content h2 {
+    border-radius: 50%;
+    border: 1px solid green;
+  }
+  .getting__title__text__content h3 {
+    text-align: center;
+  }
+  .getting__title__text__content p {
+    text-align: center;
+  }
+}
+
+.endless {
+  padding: 5rem 0;
+}
+.endless__title {
+  text-align: center;
+}
+.endless__title h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.endless__title p {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+.endless__title__text {
+  margin-bottom: 7rem;
+  display: flex;
+  margin-left: 2rem;
+}
+.endless__title__text__content {
+  display: flex;
+  width: 100%;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.endless__title__text__content a {
+  padding: 4rem 0;
+  color: #00754A;
+  text-decoration: underline;
+}
+.endless__title__text__content a:hover {
+  text-decoration: none;
+}
+.endless__title__text__content .fun {
+  margin-left: 2rem;
+}
+.endless__title__text__content h2 {
+  padding: 1rem 2rem;
+  border: 1px solid green;
+  border-radius: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.endless__title__text__content h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.endless__title__text__content p {
+  max-width: 28rem;
+}
+.endless__title__text__content p span {
+  text-decoration: underline;
+  color: #00754A;
+  cursor: pointer;
+}
+.endless__title__text__content p span:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 970px) {
+  .endless {
+    padding: 15rem 0;
+    padding-top: 5rem;
+  }
+  .endless__title h2 {
+    font-size: 3.5rem;
+  }
+  .endless__title p {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .endless .end {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .endless__title__text__content {
+    display: block;
+  }
+  .endless__title__text__content img {
+    padding: 2rem 0;
+    width: 30%;
+    margin-left: 13rem;
+  }
+  .endless__title__text__content .fun {
+    text-align: center;
+  }
+  .endless__title__text__content .fun P {
+    max-width: unset;
+  }
+}
+
+.card {
+  padding: 2rem 0;
+  background-color: #f2f0eb;
+}
+.card__title {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.card__title h2 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+.card__title__text__content h3 {
+  font-size: 2rem;
+}
+.card .secline {
+  padding-top: 5rem;
+}
+.card .dollar {
+  padding-bottom: 2rem;
+}
+.card .dollar #star {
+  font-weight: bold;
+}
+.card .dollar #load {
+  font-weight: bold;
+}
+.card__title__text__content {
+  display: flex;
+}
+.card__title__text__content img {
+  width: 10rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.card__title__text__content .scan {
+  margin-left: 2rem;
+}
+.card__title__text__content .scan h3 {
+  padding-bottom: 1.5rem;
+}
+.card__title__text__content .scan p {
+  max-width: 35rem;
 }
 
 .links {

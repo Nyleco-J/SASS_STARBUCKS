@@ -1,5 +1,5 @@
 .btn{
-    background-color: $clr-primary;
+    background-color: $clr-light;
     padding: .8rem 1.8rem;
     border-radius: 3rem;
     border: 1px solid;
@@ -31,5 +31,10 @@
         &:hover{
             background-color: darken(gray, 8);
         }
+    }
+    &-num{
+        border-radius: 50%;
+        color: rgb(9, 128, 5);
+        border-color: rgb(9, 128, 5);
     }
 }
