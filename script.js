@@ -37,3 +37,61 @@ function removeActiveContent(){
     star.classList.remove("active");
   })
 }
+
+const btop =document.querySelector(".backtotop") ;
+window.addEventListener("scroll", () => {
+  console.log(window.pageYOffset);
+  if(window.pageYOffset >=100){
+    btop.classList.add("show")
+  }
+  else{
+    btop.classList.remove("show")
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function scrollToTop(){
+//   window.scrollTo({top: 0, behavior: 'smooth'});
+// }
+
+// function toggleTopButton() {
+//   if (document.body.scrollTop > 20 ||
+//       document.documentElement.scrollTop > 20) {
+//     document.getElementById('backtotop').classList.add("show");
+//   } else {
+//     document.getElementById('backtotop').classList.remove("show");
+//   }
+// };
+
+

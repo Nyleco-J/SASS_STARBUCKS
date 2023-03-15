@@ -436,5 +436,116 @@
         }
        }
     }
+    @include mediaQuery($break-lg){
+        .firstline{
+            @include grid (4, 0rem);
+            grid-gap: unset;
+            p{
+                font-size: 2rem;
+            }
+        }
+        .secline{
+            @include grid (4, 1rem);
+            p{
+                font-size: 2rem;
+            }
+        }   
+        &__title__text__content{
+            img{
+                @include imgFit(12rem, 100%);
+            }
+           h3{
+            font-size: 1.8rem;
+           }
+           p{
+            max-width: 20rem;
+            font-size: 1.8rem;
+           }
+        }
+    }
 }
+
+.keep{
+    background-color: #D4E9E2;
+    padding: 2rem;
+    &__content{
+        text-align: center;
+        h2{
+            font-size: 2.5rem;
+        }
+        img{
+            width: 20rem;
+            align-items: center;
+        }
+        p{
+            padding: 2rem 0;
+            a{
+                color: $clr-primary;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @include mediaQuery($break-lg){
+        background-color: $clr-primary;
+        .container{
+            max-width: unset;
+        }
+        &__wrapper{
+            background-color: #D4E9E2;
+            
+        }
+    }
+}
+.codes{
+    padding: 2rem;
+    &__content{
+        .starcode{
+            h2{
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+            }
+            p{
+              font-size: 1.5rem;
+              span{
+                color: rgb(2, 97, 2);
+              }  
+            }
+            .enter{
+                    margin-bottom: 2rem;
+                    padding: .5rem 1rem;
+                    border: 1px solid gray;
+                    height: fit-content;
+                    p{
+                        margin-bottom: .2rem;
+                        font-weight: bold;
+                    }
+            }
+        }
+        a{
+            
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: 50px;
+            color: rgb(0, 0, 0);
+            border-style: solid;
+            padding: 0.5rem 15px;
+            border-width: 1px;
+            cursor: pointer;
+            text-align: right;
+            &:hover{
+                background-color: rgb(231, 227, 227);
+            }
+        }
+    }
+    .question{
+        
+        h2{
+            padding-top: 3rem;
+        }
+    }
+}
+
 
